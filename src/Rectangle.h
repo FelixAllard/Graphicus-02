@@ -8,6 +8,19 @@
 
 
 class Rectangle :Forme{
+    public:
+    Rectangle(float length, float width);
+        Rectangle(float length, float width, Coordonnee ancor);
+        void SetLength(float length);
+        void SetWidth(float width);
+        float GetLength();
+        float GetWidth();
+
+
+    private:
+        float length__;
+        float width__;
+
 };
 
 
