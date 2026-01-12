@@ -23,6 +23,8 @@ add_executable(Graphicus__02
         src/ObjectType/LayerState.h
         src/Vecteur.cpp
         src/Vecteur.h
+        src/Canevas.cpp
+        src/Canevas.h
 
 )
 
@@ -38,5 +40,7 @@ add_executable(run_tests
         src/ObjectType/LayerState.h
         src/Vecteur.cpp
         src/Vecteur.h
+        src/Canevas.cpp
+        src/Canevas.h
 )
 
