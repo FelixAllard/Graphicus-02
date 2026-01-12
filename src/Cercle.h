@@ -15,6 +15,7 @@ class Cercle : public Forme{
         float GetRayon();
         Coordonnee GetAncor();
         void SetAncor(Coordonnee ancor);
+        double aire();
     private:
         float rayon__;
 };

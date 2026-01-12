@@ -21,6 +21,8 @@ add_executable(Graphicus__02
         src/Couche.cpp
         src/Couche.h
         src/ObjectType/LayerState.h
+        src/Vecteur.cpp
+        src/Vecteur.h
 
 )
 
@@ -34,5 +36,7 @@ add_executable(run_tests
         src/Couche.cpp
         src/Couche.h
         src/ObjectType/LayerState.h
+        src/Vecteur.cpp
+        src/Vecteur.h
 )
 

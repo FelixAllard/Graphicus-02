@@ -16,6 +16,7 @@ class Rectangle : public Forme{
         void virtual SetWidth(float width);
         float virtual GetLength();
         float virtual GetWidth();
+        double aire();
 
 
     private:

@@ -40,12 +40,12 @@ class Couche {
         /// Elle offre la possibilité d’obtenir l’aire totale. L’aire totale de la couche est définie comme la somme des
         ///aires des formes qui la compose.
         /// @return  La valeur de retour, l’aire totale, est un nombre réel.
-        float GetArea();
+        double GetArea();
     ///Elle offre la possibilité de translater. La translation d’une couche est réalisée en faisant la translation de tout les formes de la couche.
     ///@param translationX Les valeurs de translation horizontale
     ///@param translationY Les valeurs de translation verticale
     ///@return  Une valeur de retour booléenne indique si l’opération est une réussite ou un échec.
-        bool MoveFormes(double translationX, double translationY);
+        bool MoveFormes(int translationX, int translationY);
 
 
 
@@ -55,7 +55,7 @@ class Couche {
         /// Elle offre la possibilité de changer l’état.  L’état désiré est spécifié en paramètre.  Les détails sur les états et la manière dont ils affectent les opérations de la couche sont donnés un peu plus loin.
         ///@param layerState Les états possibles d’une couche sont : initialisée, active et inactive.
         ///@return Une valeur de retour booléenne indique si l’opération est une réussite ou un échec.
-        bool ChangeLayerState(LayerState* layerState);
+        bool ChangeLayerState(LayerState layerState);
 
         ///Elle permet l’affichage du contenu, donc de toutes ses formes. L’endroit à afficher (le flot) est spécifié en
         ///paramètre.
@@ -63,6 +63,7 @@ class Couche {
         ~Couche();
     private:
         std::vector<Forme*> formes;
+        LayerState layerState__;
 };
 
 

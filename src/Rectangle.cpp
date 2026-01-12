@@ -38,3 +38,9 @@ float Rectangle::GetLength() {
 float Rectangle::GetWidth() {
     return width__;
 }
+
+double Rectangle::aire() {
+    float area = width__ * length__;
+
+    return area;
+}
