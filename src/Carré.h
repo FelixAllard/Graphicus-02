@@ -7,7 +7,17 @@
 #include "Rectangle.h"
 
 
-class Carré : Rectangle{
+class Carré :public  Rectangle{
+    public:
+        Carré();
+        Carré(float length, Coordonnee ancor);
+        void SetLength(float length);
+        void SetWidth(float width);
+        float GetLength();
+        float GetWidth();
+
+
+
 };
 
 

@@ -18,6 +18,9 @@ add_executable(Graphicus__02
         src/Carré.cpp
         src/Carré.h
         src/ObjectType/coordonnee.h
+        src/Couche.cpp
+        src/Couche.h
+        src/ObjectType/LayerState.h
 
 )
 
@@ -28,5 +31,8 @@ add_executable(run_tests
         src/forme.h
         src/forme.cpp
         src/ObjectType/coordonnee.h
+        src/Couche.cpp
+        src/Couche.h
+        src/ObjectType/LayerState.h
 )
 

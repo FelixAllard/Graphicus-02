@@ -7,17 +7,19 @@
 #include "Forme.h"
 
 
-class Rectangle :Forme{
+class Rectangle : public Forme{
     public:
-    Rectangle(float length, float width);
+        Rectangle();
+        Rectangle(float length, float width);
         Rectangle(float length, float width, Coordonnee ancor);
-        void SetLength(float length);
-        void SetWidth(float width);
-        float GetLength();
-        float GetWidth();
+        void virtual SetLength(float length);
+        void virtual SetWidth(float width);
+        float virtual GetLength();
+        float virtual GetWidth();
 
 
     private:
+
         float length__;
         float width__;
 

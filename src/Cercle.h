@@ -7,7 +7,16 @@
 #include "Forme.h"
 
 
-class Cercle :Forme{
+class Cercle : public Forme{
+    public:
+        Cercle();
+        Cercle(float rayon, Coordonnee ancor);
+        void SetRayon(float rayon);
+        float GetRayon();
+        Coordonnee GetAncor();
+        void SetAncor(Coordonnee ancor);
+    private:
+        float rayon__;
 };
 
 

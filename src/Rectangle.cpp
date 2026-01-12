@@ -4,6 +4,9 @@
 
 #include "Rectangle.h"
 
+Rectangle::Rectangle() {
+    //No need to do anything
+}
 
 Rectangle::Rectangle(float length, float width)
 {

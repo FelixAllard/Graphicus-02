@@ -7,7 +7,7 @@
 #include "Forme.h"
 
 
-class Polygone : Forme {
+class Polygone : public Forme {
 };
 
 
